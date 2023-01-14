@@ -16,7 +16,7 @@
   \********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n    background-color: lightgray;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-todo-list/./src/assets/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"* {\\r\\n    margin: 0;\\r\\n    padding: 0;\\r\\n}\\r\\n\\r\\n.container {\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    height: 100vh;\\r\\n}\\r\\n\\r\\nheader {\\r\\n    height: 60px;\\r\\n}\\r\\n\\r\\nmain {\\r\\n    display: grid;\\r\\n    grid-template-columns: 300px 1fr;\\r\\n    background-color: #e4e5ee;\\r\\n    height: 100vh;   \\r\\n}\\r\\n\\r\\n#menu {\\r\\n    display: flex;\\r\\n    flex-direction: column;\\r\\n    background-color: #d7d8e0;\\r\\n    align-items: center;  \\r\\n}\\r\\n\\r\\n.menu-item {\\r\\n    padding: 12px;\\r\\n    margin: 4px;\\r\\n    width: 256px;\\r\\n    border-radius: 12px;\\r\\n    text-align: center;\\r\\n    cursor: pointer;\\r\\n}\\r\\n\\r\\n.menu-item:hover {\\r\\n    background-color: #cbccd2;\\r\\n}\\r\\n\\r\\n#dashboard-header {\\r\\n    background-color: aliceblue;\\r\\n    height: 64px;\\r\\n    margin: 12px;\\r\\n    border-radius: 8px;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-todo-list/./src/assets/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,87 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/style.css */ \"./src/assets/style.css\");\n\r\n\r\nconst body = document.querySelector(\"body\");\r\nbody.innerHTML = `Hello, is it me you are looking for?`\n\n//# sourceURL=webpack://odin-todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/style.css */ \"./src/assets/style.css\");\n/* harmony import */ var _js_loadDOM__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/loadDOM */ \"./src/js/loadDOM.js\");\n/* harmony import */ var _js_navigation__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/navigation */ \"./src/js/navigation.js\");\n\r\n\r\n\r\n\r\naddEventListener(\"DOMContentLoaded\", () => {\r\n    (0,_js_loadDOM__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n    (0,_js_navigation__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\r\n})\r\n\r\n\n\n//# sourceURL=webpack://odin-todo-list/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/dashboard.js":
+/*!*****************************!*\
+  !*** ./src/js/dashboard.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst createDashboard = (main) => {\r\n    const dashboard = document.createElement(\"div\");\r\n    dashboard.classList.add(\"dashboard\");\r\n    main.appendChild(dashboard);\r\n\r\n    const createDashboardHeader = (dashboard) => {\r\n        const dashboardHeader = document.createElement(\"div\");\r\n        dashboardHeader.setAttribute(\"id\", \"dashboard-header\");\r\n        dashboard.appendChild(dashboardHeader);\r\n    }\r\n\r\n    createDashboardHeader(dashboard);\r\n\r\n    const dashboardContent = document.createElement(\"div\");\r\n    dashboardContent.setAttribute(\"id\", \"dashboard-content\");\r\n    dashboard.appendChild(dashboardContent);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createDashboard);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/dashboard.js?");
+
+/***/ }),
+
+/***/ "./src/js/loadDOM.js":
+/*!***************************!*\
+  !*** ./src/js/loadDOM.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ \"./src/js/menu.js\");\n/* harmony import */ var _dashboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard */ \"./src/js/dashboard.js\");\n\r\n\r\n\r\nconst container = document.querySelector(\".container\");\r\n\r\nconst createHeader = () => {\r\n    const header = document.createElement(\"header\");\r\n    header.classList.add(\"header\")\r\n    container.appendChild(header);\r\n}\r\n\r\nconst createMain = () => {\r\n    const main = document.createElement(\"main\");\r\n    main.classList.add(\"main\");\r\n    container.appendChild(main);\r\n    \r\n    return main; \r\n}\r\n\r\nconst initialDOM = () => {\r\n    const main = createMain();\r\n    (0,_menu__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(main);\r\n    (0,_dashboard__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(main);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialDOM);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/loadDOM.js?");
+
+/***/ }),
+
+/***/ "./src/js/menu.js":
+/*!************************!*\
+  !*** ./src/js/menu.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst createMenu = (main) => {\r\n    const menu = document.createElement(\"menu\");\r\n    menu.setAttribute(\"id\", \"menu\");\r\n\r\n    // Create menu header to house menu buttons\r\n    const createMenuHeader = (menu) => {\r\n        const menuHeader = document.createElement(\"div\");\r\n        menuHeader.setAttribute(\"id\", \"menu-header\");\r\n        menu.appendChild(menuHeader);\r\n    \r\n        const hideShow = document.createElement(\"button\");\r\n        hideShow.classList.add(\"menu-button\");\r\n        hideShow.setAttribute(\"id\", \"hide-show\");\r\n        hideShow.textContent = `Collapse`;\r\n        menuHeader.appendChild(hideShow);\r\n    \r\n        const home = document.createElement(\"button\");\r\n        home.classList.add(\"menu-button\");\r\n        home.setAttribute(\"id\", \"home-btn\");\r\n        home.textContent = \"Home\";\r\n        menuHeader.appendChild(home);\r\n    }\r\n\r\n    createMenuHeader(menu);\r\n\r\n    // An array of menu items\r\n    const menuItems = [\r\n        { name: \"Today\", id: \"menu-today\" },\r\n        { name: \"Upcoming\", id: \"menu-upcoming\"},\r\n        { name: \"Projects\", id: \"menu-projects\" },\r\n        { name: \"Tags\" , id: \"menu-tags\" },  \r\n    ]\r\n\r\n    // Create a list of menu items.\r\n    for (const menuItem of menuItems) {\r\n        const menuDiv = document.createElement(\"div\");\r\n        menuDiv.classList.add(\"menu-item\");\r\n        menuDiv.textContent = menuItem.name;\r\n        menuDiv.setAttribute(\"id\", menuItem.id);\r\n        menu.appendChild(menuDiv);\r\n    }\r\n\r\n    main.appendChild(menu);\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createMenu);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/menu.js?");
+
+/***/ }),
+
+/***/ "./src/js/navigation.js":
+/*!******************************!*\
+  !*** ./src/js/navigation.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _today__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./today */ \"./src/js/today.js\");\n/* harmony import */ var _upcoming__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./upcoming */ \"./src/js/upcoming.js\");\n/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./projects */ \"./src/js/projects.js\");\n/* harmony import */ var _tags__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tags */ \"./src/js/tags.js\");\n\r\n\r\n\r\n\r\n\r\nconst menuNavigation = () => {\r\n    const menuTabs = {\r\n        \"menu-today\" : _today__WEBPACK_IMPORTED_MODULE_0__[\"default\"],\r\n        \"menu-upcoming\" : _upcoming__WEBPACK_IMPORTED_MODULE_1__[\"default\"],\r\n        \"menu-projects\" : _projects__WEBPACK_IMPORTED_MODULE_2__[\"default\"],\r\n        \"menu-tags\" : _tags__WEBPACK_IMPORTED_MODULE_3__[\"default\"]\r\n    }\r\n\r\n    const menuItems = document.querySelectorAll(\".menu-item\");\r\n\r\n    menuItems.forEach(menuItem => {\r\n        menuItem.addEventListener(\"click\", e => {\r\n            const tabId = e.target.getAttribute(\"id\");\r\n            const generateTab = menuTabs[tabId];\r\n            generateTab ? generateTab() : null;\r\n        })\r\n    });\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuNavigation);\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://odin-todo-list/./src/js/navigation.js?");
+
+/***/ }),
+
+/***/ "./src/js/projects.js":
+/*!****************************!*\
+  !*** ./src/js/projects.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateProjects = () => {\r\n    const pageTitle = document.querySelector(\"#dashboard-header\");\r\n    pageTitle.innerHTML = \"\";\r\n    pageTitle.textContent = \"Projects\";\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateProjects);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/projects.js?");
+
+/***/ }),
+
+/***/ "./src/js/tags.js":
+/*!************************!*\
+  !*** ./src/js/tags.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateTags = () => {\r\n    const pageTitle = document.querySelector(\"#dashboard-header\");\r\n    pageTitle.innerHTML = \"\";\r\n    pageTitle.textContent = \"Tags\";\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateTags);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/tags.js?");
+
+/***/ }),
+
+/***/ "./src/js/today.js":
+/*!*************************!*\
+  !*** ./src/js/today.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateToday = () => {\r\n    const pageTitle = document.querySelector(\"#dashboard-header\");\r\n    pageTitle.innerHTML = \"\";\r\n    pageTitle.textContent = \"Today\";\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateToday);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/today.js?");
+
+/***/ }),
+
+/***/ "./src/js/upcoming.js":
+/*!****************************!*\
+  !*** ./src/js/upcoming.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst generateUpcoming = () => {\r\n    const pageTitle = document.querySelector(\"#dashboard-header\");\r\n    pageTitle.innerHTML = \"\";\r\n    pageTitle.textContent = \"Upcoming\";\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateUpcoming);\n\n//# sourceURL=webpack://odin-todo-list/./src/js/upcoming.js?");
 
 /***/ })
 

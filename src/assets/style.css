@@ -1,3 +1,48 @@
 * {
-    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    height: 60px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: #e4e5ee;
+    height: 100vh;   
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #d7d8e0;
+    align-items: center;  
+}
+
+.menu-item {
+    padding: 12px;
+    margin: 4px;
+    width: 256px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #cbccd2;
+}
+
+#dashboard-header {
+    background-color: aliceblue;
+    height: 64px;
+    margin: 12px;
+    border-radius: 8px;
 }

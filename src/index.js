@@ -1,4 +1,9 @@
 import './assets/style.css'
+import initialDOM from './js/loadDOM';
+import menuNavigation from './js/navigation';
 
-const body = document.querySelector("body");
-body.innerHTML = `Hello, is it me you are looking for?`
+addEventListener("DOMContentLoaded", () => {
+    initialDOM();
+    menuNavigation();
+})
+
