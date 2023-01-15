@@ -19,10 +19,19 @@ const menuNavigation = () => {
             const generateTab = menuTabs[tabId];
             generateTab ? generateTab() : null;
         })
-    });
+    })
 }
 
-export default menuNavigation;
+const toggleMenu = () => {
+    const toggleBtn = document.querySelector("#menu-toggle");
+    const main = document.querySelector(".main")
+
+    toggleBtn.addEventListener("click", () => {
+        main.classList.toggle("collapsed");
+    })
+};
+
+export { menuNavigation, toggleMenu };
 
 
 

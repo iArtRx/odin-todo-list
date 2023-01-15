@@ -1,44 +1,40 @@
+const req = require.context('../assets', false, /\.png$/);
+const menuIcons = req.keys().reduce((acc, item) => {
+    acc[item.replace('./', '').replace('.png', '')] = req(item);
+    return acc;
+}, {});
+
 const createMenu = (main) => {
     const menu = document.createElement("menu");
     menu.setAttribute("id", "menu");
 
-    // Create menu header to house menu buttons
-    const createMenuHeader = (menu) => {
-        const menuHeader = document.createElement("div");
-        menuHeader.setAttribute("id", "menu-header");
-        menu.appendChild(menuHeader);
-    
-        const hideShow = document.createElement("button");
-        hideShow.classList.add("menu-button");
-        hideShow.setAttribute("id", "hide-show");
-        hideShow.textContent = `Collapse`;
-        menuHeader.appendChild(hideShow);
-    
-        const home = document.createElement("button");
-        home.classList.add("menu-button");
-        home.setAttribute("id", "home-btn");
-        home.textContent = "Home";
-        menuHeader.appendChild(home);
-    }
-
-    createMenuHeader(menu);
-
     // An array of menu items
     const menuItems = [
-        { name: "Today", id: "menu-today" },
-        { name: "Upcoming", id: "menu-upcoming"},
-        { name: "Projects", id: "menu-projects" },
-        { name: "Tags" , id: "menu-tags" },  
-    ]
+        { name: "Toggle", id: "menu-toggle", img: menuIcons.menu},
+        { name: "Home", id: "menu-home", img: menuIcons.home},
+        { name: "Today", id: "menu-today", img: menuIcons.today },
+        { name: "Upcoming", id: "menu-upcoming", img: menuIcons.upcoming},
+        { name: "Projects", id: "menu-projects", img: menuIcons.projects},
+        { name: "Tags" , id: "menu-tags", img: menuIcons.tag },  
+    ];
+    
 
     // Create a list of menu items.
-    for (const menuItem of menuItems) {
+    menuItems.forEach(menuItem => {
         const menuDiv = document.createElement("div");
         menuDiv.classList.add("menu-item");
-        menuDiv.textContent = menuItem.name;
         menuDiv.setAttribute("id", menuItem.id);
+
+        const icon = document.createElement("img");
+        icon.src = menuItem.img;
+        menuDiv.appendChild(icon);
+
+        const name = document.createElement("span");
+        name.textContent = menuItem.name;
+        menuDiv.appendChild(name); 
+
         menu.appendChild(menuDiv);
-    }
+    })
 
     main.appendChild(menu);
 }
