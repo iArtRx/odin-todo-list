@@ -1,5 +1,5 @@
 const generateUpcoming = () => {
-    const pageTitle = document.querySelector("#dashboard-header");
+    const pageTitle = document.querySelector("#dashboard-title");
     pageTitle.innerHTML = "";
     pageTitle.textContent = "Upcoming";
 }

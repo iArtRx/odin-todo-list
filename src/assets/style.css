@@ -19,7 +19,7 @@ main {
     grid-template-columns: 300px 1fr;
     background-color: #e4e5ee;
     height: 100vh;
-    transition: grid-template-columns 0.7s ease-in-out;
+    transition: grid-template-columns 1.0s ease-in-out;
 }
 
 main.collapsed {
@@ -40,20 +40,84 @@ main.collapsed {
 }
 
 .menu-item {
-    padding: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    margin: 4px;
+    margin-bottom: 12px;;
     cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.5em;
 }
 
 .menu-item img {
     width: 30px;
+    margin-right: 16px;
 }
 
 .menu-item:hover {
     background-color: #cbccd2;
+    width: 98.5%;
 }
 
+.menu-item:nth-child(2) span {
+    transition: all 0.5s ease-in-out 0.1s;
+    opacity: 1;
+}
+
+.menu-item:nth-child(3) span {
+    transition: all 0.5s ease-in-out 0.2s;
+    opacity: 1;
+}
+
+.menu-item:nth-child(4) span {
+    transition: all 0.5s ease-in-out 0.3s;
+    opacity: 1;
+}
+
+.menu-item:nth-child(5) span {
+    transition: all 0.5s ease-in-out 0.4s;
+    opacity: 1;
+}
+
+.menu-item:nth-child(6) span {
+    transition: all 0.5s ease-in-out 0.5s;
+    opacity: 1;
+}
+
+#menu.collapsed .menu-item span {
+    opacity: 0;
+}
+
+#menu.collapsed .menu-item span {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+#menu.collapsed .menu-item:hover {
+    background-color: #cbccd2;
+}
+
+
 #dashboard-header {
-   font-size: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dashboard-title {
+    padding: 16px;
+}
+
+#add-task {
+    padding: 16px;
+    margin: 16px;
+    margin-right: 48px;
+}
+
+#dashboard-title {
+    font-size: 3rem;
 }
 
 

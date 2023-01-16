@@ -1,5 +1,6 @@
 import createMenu from "./menu";
-import createDashboard from "./dashboard";
+import { createDashboard } from "./dashboard";
+import { addTaskEvent, toggleMenu } from "./DOMEvents";
 
 const container = document.querySelector(".container");
 
@@ -14,7 +15,9 @@ const createMain = () => {
 const initialDOM = () => {
     const main = createMain();
     createMenu(main);
-    createDashboard(main);
+    createDashboard(main); 
+    toggleMenu(main, menu);
+    addTaskEvent(main); 
 }
 
 export default initialDOM;

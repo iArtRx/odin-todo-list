@@ -10,7 +10,7 @@ const createMenu = (main) => {
 
     // An array of menu items
     const menuItems = [
-        { name: "Toggle", id: "menu-toggle", img: menuIcons.menu},
+        { id: "menu-toggle", img: menuIcons.menu},
         { name: "Home", id: "menu-home", img: menuIcons.home},
         { name: "Today", id: "menu-today", img: menuIcons.today },
         { name: "Upcoming", id: "menu-upcoming", img: menuIcons.upcoming},
