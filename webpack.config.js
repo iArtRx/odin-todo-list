@@ -8,13 +8,13 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name][contenthash]'.js,
+    filename: '[name][contenthash].js',
     clean: true,
   },
   resolve: {
     modules: [
         path.resolve(__dirname, 'src'),
-        'node-modules',
+        path.resolve(__dirname, 'node_modules'),
         path.resolve(__dirname, 'assets'),
         path.resolve(__dirname, 'js'),
     ]
