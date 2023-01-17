@@ -6,6 +6,7 @@ import { Task, tasks } from "./task";
 import { createTaskForm } from "./dashboard";
 import format from "date-fns/format";
 import isBefore from "date-fns/isBefore";
+import parse from "date-fns/parse";
 
 const menuTabs = {
   "menu-today": generateToday,
@@ -14,7 +15,6 @@ const menuTabs = {
   "menu-tags": generateTags,
 };
 const menuNavigation = () => {
-
   const menu = document.querySelector("#menu");
 
   menu.addEventListener("click", (e) => {
@@ -60,27 +60,21 @@ const submitForm = (taskForm) => {
 
     const currentTab = document.querySelector("#dashboard-content");
     const tabValue = currentTab.getAttribute("data-current-page");
-    console.log("tabValue: ", tabValue);
-if (tabValue in menuTabs) {
-    console.log("tabValue exists in menuTabs");
-    menuTabs[tabValue]();
-} else {
-    console.log("tabValue does not exist in menuTabs");
-}
-
+    if (tabValue in menuTabs) {
+      menuTabs[tabValue]();
+    }
   });
 };
-
-
-
 
 const generateCards = (createTaskCard, tasks) => {
   const content = document.querySelector("#dashboard-content");
   content.innerHTML = " ";
 
   tasks.sort((a, b) => {
-    return isBefore(new Date(a.dueDate), new Date(b.dueDate)) ? -1 : 1;
-  });
+    const dateA = parse(a.dueDate, 'dd/MM/yyyy', new Date());
+    const dateB = parse(b.dueDate, 'dd/MM/yyyy', new Date());
+    return isBefore(dateA, dateB) ? -1 : 1;
+});
 
   for (let task of tasks) {
     let taskCard = createTaskCard(task);
@@ -88,10 +82,4 @@ const generateCards = (createTaskCard, tasks) => {
   }
 };
 
-export {
-  menuNavigation,
-  toggleMenu,
-  addTaskEvent,
-  submitForm,
-  generateCards,
-};
+export { menuNavigation, toggleMenu, addTaskEvent, submitForm, generateCards };

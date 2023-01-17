@@ -2,7 +2,6 @@ import createMenu from "./menu";
 import { createDashboard } from "./dashboard";
 import { addTaskEvent, toggleMenu } from "./DOMEvents";
 
-
 const container = document.querySelector(".container");
 
 const createMain = () => {
